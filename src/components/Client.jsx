@@ -1,11 +1,15 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 function Client({ client }) {
+  const navigate = useNavigate();
   const { nombre, empresa, email, telefono, id } = client;
   return (
     <tr className="border-b">
       <td className="p-4 space-y-2">
-        <p className="text-2xl text-gray-800"><span className="text-gray-800  font-bold">Nombre:</span> {nombre}</p>
+        <p className="text-2xl text-gray-800">
+          <span className="text-gray-800  font-bold">Nombre:</span> {nombre}
+        </p>
         <p className="">{empresa}</p>
       </td>
       <td className="p-4 space-y-2">
@@ -23,6 +27,7 @@ function Client({ client }) {
         <button
           className="bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-xl w-full uppercase font-bold text-xs"
           type="button"
+          onClick={() => navigate(`/clients/${id}/edit`)}
         >
           Editar
         </button>

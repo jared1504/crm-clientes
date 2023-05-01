@@ -1,11 +1,12 @@
 {
   "clients": [
     {
-      "id": 1,
-      "nombre": "Juan",
-      "telefono": 102013313,
+      "nombre": "Juan ACTUALIZADO",
+      "empresa": "Codigo Con Juan",
       "email": "juan@juan.com",
-      "empresa": "Codigo Con Juan"
+      "telefono": "102013313",
+      "notas": "Nueva nota",
+      "id": 1
     },
     {
       "id": 2,
@@ -42,6 +43,14 @@
       "telefono": "12345678901",
       "notas": "Ninguna",
       "id": 6
+    },
+    {
+      "nombre": "Jared ",
+      "empresa": "Uber",
+      "email": "jaredvega1504@gmail.com",
+      "telefono": "12345678901",
+      "notas": "Ninguna",
+      "id": 7
     }
   ]
 }
