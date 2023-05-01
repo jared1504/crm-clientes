@@ -43,3 +43,15 @@ export async function updateClient(id, datos) {//agregar un cliente
     console.log(error)
   }
 }
+
+export async function destroyClient(id) {//agregar un cliente
+  try {
+    const url_api = `${import.meta.env.VITE_API_URL}/clients/${id}` //usar la variable de la url
+    const respuesta = await fetch(url_api, {
+      method: 'DELETE'
+    })
+    await respuesta.json()
+  } catch (error) {
+    console.log(error)
+  }
+}
